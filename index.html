@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <form>
+        <div class="row">
+            <img src="assets/logo.png" alt="logo" height="100" width="200">
+            <h1>Registration Form</h1>
+        </div>
+        <h2>RVU Admissions</h2>
+        <hr>
+        <br>
+        <div class="row">
+        <p class="name">Firstname:</p>
+        <input type="text" name="firstname" placeholder="Firstname" required>
+        <br>
+        <p class="name">Middlename:</p>
+        <input type="text" name="middlename" placeholder="Middlename">
+        <br>
+        <p class="name">Lastname:</p>
+        <input type="text" name="lastname" placeholder="Lastname" required>
+        </div>
+        <br>
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="male">Male             
+        <input type="radio" name="gender" value="female">Female             
+        <input type="radio" name="gender" value="other">Other<br>
+        <br>
+        <p>Course:</p>
+        <select name="course" id="course" required>UG Courses
+            <option value="none" selected disabled hidden>Select a Course</option>
+                <optgroup label="UG Programmes">
+                <option value="BBA">B.B.A</option>
+                <option value="BCom">B.Com</option>
+                <option value="BTech">B.Tech</option>
+                <option value="BSc">B.Sc</option>
+                <option value="BA">B.A</option>
+                <option value="BDes">B.Des</option>
+                <option value="BLA">B.L.A</option>
+            </optgroup>
+            <optgroup label="PG Programmes">
+                <option value="MDes">M.Des</option>
+                <option value="MA">M.A</option>
+                <option value="MTech">M.Tech</option>
+            </optgroup>
+            <optgroup label="PhD Programmes">
+                <option value="SOB">PhD under School of Business</option>
+                <option value="SOEF">PhD under School of Economics and Finance</option>
+                <option value="SOCSE">PhD under School of Computer Science and Engineering</option>
+                <option value="SOLAS">PhD under School of Liberal Arts and Sciences</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <p>Phone:</p>
+        <input type="text" name="phonenumber" value="+91" required><br>
+        <br>
+        <p>Current Address:</p><br>
+        <textarea rows="5" cols="40" class="text"></textarea><br>
+        <br>
+        <hr class="account">
+        <h2>
+            Create an account to get updates regarding your application
+        </h2>
+        <br>
+        <p>Email:</p>
+        <input type="text" name="email" placeholder="Email" required><br>
+        <br>
+        <p>Password:</p>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <br>
+        <p>Re-type Password:</p>
+        <input type="password" name="password" placeholder="Retype Password" required><br>
+        <br>
+        <br>
+        <button type="register" value="register">Apply</button>
+    </form>
+</body>
+</html>

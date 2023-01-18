@@ -41,6 +41,7 @@
                 <option value="BTech">B.Tech</option>
                 <option value="BSc">B.Sc</option>
                 <option value="BA">B.A</option>
+                <option value="BA/BSc">B.A/B.Sc</option>
                 <option value="BDes">B.Des</option>
                 <option value="BLA">B.L.A</option>
             </optgroup>
@@ -54,12 +55,13 @@
                 <option value="SOEF">PhD under School of Economics and Finance</option>
                 <option value="SOCSE">PhD under School of Computer Science and Engineering</option>
                 <option value="SOLAS">PhD under School of Liberal Arts and Sciences</option>
+                <option value="SOD">PhD under School of Design</option>
             </optgroup>
         </select>
         <br>
         <br>
         <p>Phone:</p>
-        <input type="text" name="phonenumber" value="+91" required><br>
+        <input type="tel" name="phonenumber" value="+91" pattern="/^+91[789][0-9]{9}" required><br>
         <br>
         <p>Current Address:</p><br>
         <textarea rows="5" cols="40" class="text"></textarea><br>
